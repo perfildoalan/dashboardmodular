@@ -16,6 +16,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
   min-width: 330px;
+  touch-action: none;
   container: paginas / inline-size;
 }
 .pagina-carro {
