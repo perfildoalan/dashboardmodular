@@ -1,0 +1,40 @@
+@font-face{
+ font-family:'Comfortaa';
+ src: url('./assets/fonts/Comfortaa-Light.ttf'),
+      url('./assets/fonts/Comfortaa-Bold.ttf');
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Comfortaa", sans-serif;
+  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/imgs/background-azul.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0f719e;
+}
+
+#root {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #111111cc;
+  border-radius: 30px;
+  padding: 10px;
+  width: 80%;
+  height: 80%;
+  min-width: 300px;
+  max-width: 1180px;
+  container: root / inline-size;
+}

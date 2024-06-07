@@ -1,0 +1,38 @@
+.lembretes {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #0097a7;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  min-width: 270px;
+  min-height: 150px;
+  margin-bottom: 15px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+
+.titulo-lembretes {
+  font-size: 25px;
+  align-self: flex-start;
+  padding-left: 5px;
+  padding-bottom:10px;
+}
+
+.lista-lembretes {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+@container pagina-widgets (min-width: 560px) {
+  .lembretes {
+    max-width: 170px;
+    min-heith: 170px;
+  }
+}

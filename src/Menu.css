@@ -1,0 +1,81 @@
+.menu {
+  flex: 0 0 auto;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 5px;
+}
+
+.icone-home {
+  width: 40px; 
+  background-color: #e3e3e3;
+  margin: 0px 5px;
+  filter: invert(1);
+  border: 10px solid #e3e3e3;
+  border-radius: 20px;
+  padding: 3px;
+  transition: all 0.5s;
+}
+
+.icone-home:hover {
+  width: 40px; 
+  background-color: #424242;
+  margin: 0px 5px;
+  border: 10px solid #424242;
+  border-radius: 20px;
+  padding: 3px;
+  transform: scale(1.1)
+}
+
+.icone-tools {
+  width: 40px;
+  background-color: #e3e3e3;;
+  margin: 0px 5px;
+  filter: invert(1);
+  border: 10px solid #e3e3e3;
+  border-radius: 20px;
+  padding: 3px;
+  transition: all 0.5s;
+}
+
+.icone-tools:hover {
+  width: 40px; 
+  background-color: #424242;
+  margin: 0px 5px;
+  border: 10px solid #424242;
+  border-radius: 20px;
+  padding: 3px;
+  transform: scale(1.1)
+}
+
+.icone-settings {
+  width: 40px;
+  background-color: #e3e3e3;;
+  margin: 0px 5px;
+  filter: invert(1);
+  border: 10px solid #e3e3e3;
+  border-radius: 20px;
+  padding: 3px;
+  transition: all 0.5s;
+}
+
+.icone-settings:hover {
+  width: 40px; 
+  background-color: #424242;
+  margin: 0px 5px;
+  border: 10px solid #424242;
+  border-radius: 20px;
+  padding: 3px;
+  transform: scale(1.1);
+}
+
+@container root (max-width: 420px) {
+  .menu {
+    width: 0;
+    height: 0;
+    display: none;
+    visibility: hidden;
+  }
+}

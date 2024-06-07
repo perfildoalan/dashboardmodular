@@ -1,0 +1,74 @@
+.widgets-hover:hover {
+  filter: brightness(180%);
+  transition: filter 1s;
+}
+
+.paginas {
+  flex: 1 1 auto;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+  box-sizing: border-box;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  min-width: 330px;
+  container: paginas / inline-size;
+}
+.pagina-carro {
+  flex: 1 1 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: #121212cc;
+  border-radius: 30px;
+  padding: 15px;
+  margin: 0px 10px;
+  box-sizing: border-box;
+}
+
+.pagina-widgets {
+  flex: 2 2 350px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: #121212cc;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 0px 10px;
+  box-sizing: border-box;
+  container: pagina-widgets / inline-size;
+}
+
+.widgets-menores {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: #212121;
+  border-radius: 30px;
+  padding: 10px;
+  max-height: 200px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+.widgets-menores::-webkit-scrollbar {
+  display: none;
+}
+
+
+@container pagina-widgets (min-width: 560px) {
+  .widgets-menores {
+    height: 100%;
+    overflow: initial;
+  }
+}
