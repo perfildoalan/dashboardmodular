@@ -10,6 +10,7 @@ html, body {
   margin: 0;
   padding: 0;
   overscroll-behavior: none;
+  user-drag: none;
 }
 
 body {
