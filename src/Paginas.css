@@ -1,6 +1,6 @@
 .widgets-hover:hover {
-  filter: brightness(180%);
-  transition: filter 1s;
+ /* filter: brightness(180%);
+  transition: filter 1s; */
 }
 
 .paginas {
