@@ -18,9 +18,17 @@ export function getLocalizacao() {
   return localizacao
 }
 
-export async function getTemperatura() {
-  let temperatura
+export function getMode() {
+  let mode = () => {
+      let DiaOuNoiteMode
+      let DiaOuNoite = new Date();
 
-  
+      if (DiaOuNoite.getHours() >= 6 && DiaOuNoite.getHours() < 18) {
+        DiaOuNoiteMode = "LightMode";
+      } else {
+        DiaOuNoiteMode = "DarkMode";
+      }
+
+      return DiaOuNoiteMode
+    }
 }
-
