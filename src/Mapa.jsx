@@ -1,11 +1,22 @@
 import "./Mapa.css";
 
 export default function Mapa() {
-
+  
+  let textoPesquisa = ""
+  
   const verificaTecla = (ev) => {
-    console.log(ev);
-    if (verificaTecla.key == "Enter") {
-      
+    if (ev.key != "Delete" && ev.key != "Backspace" && ev.key != "Enter") {
+      textoPesquisa = textoPesquisa + ev.key;
+      console.log(textoPesquisa)
+    } else if (ev.key == "Backspace" && ev.key != "Delete" && ev.key != "Enter") {
+      textoPesquisa = textoPesquisa.slice(0, -1);
+      console.log(textoPesquisa);
+    } else if (ev.key == "Delete" && ev.key != "Backspace" && ev.key != "Enter") {
+      textoPesquisa = ""
+      console.log(textoPesquisa);
+    } else if (ev.key == "Enter" && ev.key != "Backspace" && ev.key != "Delete" ) {
+      window.open("https://www.google.com/maps/search/?api=1&query="+ textoPesquisa.replaceAll(' ', '%20'), "_blank");
+      console.log(textoPesquisa);
     }
   }
   
